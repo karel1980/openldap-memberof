@@ -1,0 +1,11 @@
+dn: cn=config
+changetype: modify
+replace: olcTLSCACertificateFile
+olcTLSCACertificateFile: /etc/pki/tls/certs/STAR_example_com.ca-bundle
+-
+replace: olcTLSCertificateFile
+olcTLSCertificateFile: /etc/pki/tls/certs/STAR_example_com.crt
+-
+replace: olcTLSCertificateKeyFile
+olcTLSCertificateKeyFile: /etc/pki/tls/certs/STAR_example_com.key
+

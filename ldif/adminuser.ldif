@@ -1,0 +1,37 @@
+dn: dc=example,dc=com
+objectclass: dcObject
+objectclass: organization
+dc: example
+o: Example
+
+dn: ou=People,dc=example,dc=com
+objectclass: organizationalUnit
+objectclass: top
+ou: People
+
+dn: ou=System,dc=example,dc=com
+objectclass: organizationalUnit
+objectclass: top
+ou: People
+
+dn: uid=admin,ou=People,dc=example,dc=com
+cn: Example Admin
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: simpleSecurityObject
+objectClass: top
+sn: Admin
+uid: admin
+userPassword: {SSHA}i5W/Rw/hFnouxDPZ+tOyof126HEKd7a5
+
+dn: uid=cas,ou=System,dc=example,dc=com
+cn: Example CAS
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: simpleSecurityObject
+objectClass: top
+sn: CAS
+uid: cas
+userPassword: {SSHA}i5W/Rw/hFnouxDPZ+tOyof126HEKd7a5

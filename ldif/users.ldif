@@ -1,0 +1,9 @@
+dn: uid=user0,ou=People,dc=example,dc=com
+objectclass: inetOrgPerson
+objectclass: uidObject
+uid: user0
+cn: User0
+givenName: User
+title: User
+mail: user0@example.com
+sn: 0

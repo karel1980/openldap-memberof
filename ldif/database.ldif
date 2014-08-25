@@ -1,0 +1,18 @@
+dn: olcDatabase={1}hdb,cn=config
+objectClass: olcHdbConfig
+olcDatabase: {1}hdb
+olcDbDirectory: /disk1/ldap
+olcSuffix: dc=example,dc=com
+olcRootDN: cn=Manager,dc=example,dc=com
+olcRootPW: {SSHA}i5W/Rw/hFnouxDPZ+tOyof126HEKd7a5 
+olcAccess: to attrs=userPassword
+  by self =xw
+  by anonymous auth
+  by * none
+olcAccess: to dn.subtree="ou=People,dc=example,dc=com"
+  by dn.base="gidNumber=0+uidNumber=0,cn=peercred,cn=external,cn=auth" write
+  by dn.children="ou=System,dc=example,dc=com" read
+  by self read
+olcAccess: to *
+  by dn.base="gidNumber=0+uidNumber=0,cn=peercred,cn=external,cn=auth" write
+  by self read
