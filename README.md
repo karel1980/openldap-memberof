@@ -1,6 +1,6 @@
-# Example ldap setup
+# Description
 
-Warning: The 'memberOf' overlay isn't working.
+This repository shows how to set up a fresh openldap database with memberof and refint overlays.
 
 # Usage:
 

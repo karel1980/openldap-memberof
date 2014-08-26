@@ -1,5 +1,0 @@
-dn: cn=Group1,ou=Groups,dc=example,dc=com
-objectclass: groupOfNames
-cn: Group1
-member: uid=user0,ou=Users,dc=example,dc=com
-member: uid=user1,ou=Users,dc=example,dc=com
